@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yuanchen Zhang (Alexander Constantinus) — research portfolio in AI for medical imaging, cardiac MRI reconstruction, and computational oncology.">
+  <title>Yuanchen Zhang | Medical AI Research</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home">YZ<span> / Research</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu ☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#interests">Research Interests</a><a href="#projects">Research</a><a href="#skills">Methods</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero container">
+      <div>
+        <p class="eyebrow">MEDICAL IMAGING · ARTIFICIAL INTELLIGENCE · RESEARCH</p>
+        <h1>Yuanchen Zhang<br><em>(Alexander Constantinus)</em></h1>
+        <p class="lead">I work at the intersection of computer science and medicine, developing computational methods to turn medical images into clinically meaningful information.</p>
+        <div class="actions"><a class="button primary" href="#projects">Explore my research →</a><a class="button secondary" href="#about">About me</a></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract scientific visualization"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="art-card">AI <small>Imaging · Reconstruction · Prediction</small></div></div>
+    </section>
+    <section id="about" class="section alternate"><div class="container section-inner">
+      <p class="eyebrow">01 / ABOUT</p><h2>About me</h2>
+      <p>I'm a university student working across computer science and medicine, with research interests in medical image computing, deep learning, and translational artificial intelligence. I am particularly interested in making sophisticated imaging algorithms practical for patient-specific analysis.</p>
+      <p>My work explores both <strong>cardiovascular imaging</strong> and <strong>oncologic imaging</strong>—from reconstructing personalized three-dimensional cardiac anatomy to predicting patient outcomes using multimodal MRI-derived information.</p>
+      <p>My long-term academic goal is to pursue doctoral research and a career in university teaching and research.</p>
+    </div></section>
+    <section id="interests" class="section"><div class="container">
+      <p class="eyebrow">02 / RESEARCH INTERESTS</p><h2>Research directions</h2>
+      <div class="cards">
+        <article class="card"><span class="card-icon">♡</span><h3>Cardiac MRI Reconstruction</h3><p>Personalized 3D cardiac modeling from routine multi-slice cardiac magnetic resonance images, including slice alignment and through-plane super-resolution.</p></article>
+        <article class="card"><span class="card-icon">◈</span><h3>Medical Image AI</h3><p>Deep learning for medical image segmentation, image reconstruction, anatomical representation learning, and patient-specific adaptation.</p></article>
+        <article class="card"><span class="card-icon">◎</span><h3>Computational Oncology</h3><p>Combining MRI radiomics, deep image features, and clinical information for prognostic prediction in cancer.</p></article>
+      </div>
+    </div></section>
+    <section id="projects" class="section alternate"><div class="container">
+      <p class="eyebrow">03 / SELECTED RESEARCH</p><h2>Research projects</h2>
+      <div class="project-list">
+        <article class="project"><div><p class="tag">CARDIAC MRI · 3D RECONSTRUCTION</p><h3>ReLAX — Personalized 3D Cardiac Reconstruction from Multi-slice CMR</h3><p>A two-stage approach for reconstructing high-resolution three-dimensional cardiac anatomy from low-resolution short-axis (SAX) cardiac MRI. The first stage combines image and anatomical features for motion correction and uses super-resolution to improve through-plane resolution. The second stage adapts the reconstruction to an individual patient using long-axis (2CH/3CH/4CH) views.</p><p class="research-meta">Key methods: motion correction · anatomical feature fusion · 3D super-resolution · long-axis-guided personalized optimization</p></div><span aria-hidden="true">↗</span></article>
+        <article class="project"><div><p class="tag">OSTEOSARCOMA · PROGNOSTIC MODELING</p><h3>Multi-scale Radiomics and Deep Learning for Osteosarcoma Prognosis</h3><p>Research integrating clinical variables, multi-scale radiomics, and deep-learning features extracted from pretreatment MRI to predict two-year progression-free survival outcomes after surgery in osteosarcoma. The project explores how different information sources contribute to multimodal prognostic modeling.</p><p class="research-meta">Key methods: MRI radiomics · 3D deep learning · multimodal feature fusion · risk prediction</p></div><span aria-hidden="true">↗</span></article>
+        <article class="project"><div><p class="tag">EXPERIMENTAL VALIDATION</p><h3>Evaluation of Cardiac Reconstruction Across Imaging Domains</h3><p>Evaluating cardiac reconstruction with volumetric overlap and surface-distance metrics such as Dice and HD95, including investigation of model generalization under domain shift between cardiac MRI datasets.</p><p class="research-meta">Focus: quantitative validation · generalization · anatomical consistency</p></div><span aria-hidden="true">↗</span></article>
+      </div>
+    </div></section>
+    <section id="skills" class="section"><div class="container">
+      <p class="eyebrow">04 / METHODS & TOOLS</p><h2>Technical toolkit</h2>
+      <div class="cards">
+        <article class="card"><span class="card-icon">⌘</span><h3>Programming & AI</h3><p>Python, PyTorch, deep neural networks, numerical methods, data analysis, and scientific computing.</p></article>
+        <article class="card"><span class="card-icon">▦</span><h3>Image Computing</h3><p>Medical image processing, NIfTI volumes, SimpleITK, NiBabel, SciPy, scikit-image, and volumetric visualization.</p></article>
+        <article class="card"><span class="card-icon">◇</span><h3>Quantitative Evaluation</h3><p>Medical image segmentation, Dice similarity, HD95, MRI radiomics, model validation, and domain-shift analysis.</p></article>
+      </div>
+    </div></section>
+    <section id="contact" class="section alternate"><div class="container contact">
+      <p class="eyebrow">05 / CONTACT</p><h2>Research and collaboration</h2>
+      <p>I welcome academic conversations about medical imaging, computational medicine, and machine learning research.</p>
+      <p class="contact-note">GitHub profile, institutional affiliation, email address, and publication links can be added here when available.</p>
+      <a class="button primary" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Yuanchen Zhang · Alexander Constantinus</span><span>Research portfolio · GitHub Pages</span></div></footer>
+</body>
+</html>
